@@ -4,8 +4,30 @@ import Home from "./Pages/Home";
 import Skill from "./Pages/Skill";
 import Proyek from "./Pages/Proyek";
 import { Helmet } from "react-helmet";
+import { useEffect, useState } from "react";
+import ScrollReveal from "scrollreveal";
 
 function App() {
+  useEffect(() => {
+    let menu = document.querySelector("#menu-icon");
+    let navbar = document.querySelector(".navbar");
+
+    menu.onclick = () => {
+      menu.classList.toggle("bx-x");
+      navbar.classList.toggle("open");
+    };
+    const sr = ScrollReveal({
+      distance: "40px",
+      duration: 2500,
+      reset: true,
+    });
+    sr.reveal(".logo", { delay: 200, origin: "left" });
+
+    return () => {
+      sr.destroy();
+    };
+  }, []);
+
   return (
     <div className="App">
       <Helmet>
@@ -17,17 +39,17 @@ function App() {
           href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
       </Helmet>
       <header>
-        <a href="/" class="logo">
+        <Link to="/" className="logo">
           <span>K</span>i<span>s</span>ep
-        </a>
-        <ul class="navbar">
+        </Link>
+        <ul className="navbar">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -39,11 +61,11 @@ function App() {
           </li>
         </ul>
 
-        <div class="menu-btn">
-          <span>INTRO</span>
-          <div class="bx bx-menu" id="menu-icon"></div>
+        <div className="menu-btn">
+          <div className="bx bx-menu" id="menu-icon"></div>
         </div>
       </header>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="skill" element={<Skill />} />
