@@ -4,7 +4,7 @@ import Home from "./Pages/Home";
 import Skill from "./Pages/Skill";
 import Proyek from "./Pages/Proyek";
 import { Helmet } from "react-helmet";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <Helmet>
         <meta charset="utf-8" />
-        <title>My Portopholio</title>
+        <title>Rizki Sepriadi | Home</title>
         <link rel="stylesheet" href="style/style.css" />
         <link
           rel="stylesheet"
