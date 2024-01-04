@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 export default function Skill() {
+  useEffect(() => {
+    document.title = "Rizki Sepriadi | Skill";
+  });
   return (
     <article className="skill" id="skill">
       <h1>Skill</h1>
@@ -7,7 +12,7 @@ export default function Skill() {
         <li>HTML & CSS</li>
         <li>Basic JavaScript</li>
         <li>Basic Phyton</li>
-        <li>Design UI with Figma</li>
+        <li>React JS</li>
       </ul>
     </article>
   );

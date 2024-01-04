@@ -1,6 +1,11 @@
+import { Link } from 'react-router-dom';
 import profil from '../img/1659857943100.jpg'
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Rizki Sepriadi | Home";
+  });
   return (
     <section className="home">
       <div className="home-text">
@@ -20,21 +25,21 @@ export default function Home() {
         </div>
       </div>
       <div className="home-img">
-        <img src={profil} alt="My photo" />
+        <img src={profil} alt="Profil" />
       </div>
 
       <div className="share">
         <p>About Me:</p>
         <div className="social">
-          <a href="https://www.linkedin.com/in/rizkisepriadi-057b8a233">
+          <Link to="https://www.linkedin.com/in/rizkisepriadi-057b8a233">
             <i className="bx bxl-linkedin-square"></i>
-          </a>
-          <a href="muhammadrizkisepriadi@gmail.com">
-            <i className="bx bxl-gmail"></i>
-          </a>
-          <a href="www.instagram.com/rizki.sepriadi/">
+          </Link>
+          <Link to="https://github.com/rizkisepriadi">
+            <i className="bx bxl-github"></i>
+          </Link>
+          <Link to="https://instagram.com/rizki.sepriadi/">
             <i className="bx bxl-instagram"></i>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
