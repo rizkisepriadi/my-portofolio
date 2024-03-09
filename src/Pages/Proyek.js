@@ -22,7 +22,7 @@ export default function Proyek() {
           <a target="_blank" href="https://tori-porto.netlify.app" rel="noreferrer">
             <img src={web2} alt="web2" width="300" height="200" />
           </a>
-          <div className="info">Tori - Portofolio Akira</div>
+          <div className="info">Tribute to Akira Toriyama</div>
         </div>
         <div className="gallery">
           <a target="_blank" href="https://steakgacor.netlify.app/" rel="noreferrer">
