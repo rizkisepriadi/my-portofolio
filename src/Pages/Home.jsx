@@ -41,11 +41,8 @@ export default function Home() {
             <i className="bx bxl-instagram"></i>
           </Link>
         </div>
-
-        <div>
-          <h1>Currently working on the new UI, Stay Tune</h1>
-        </div>
       </div>
+      <p className='announcement'>Currently working on the new UI, Stay Tune</p>  
     </section>
   );
 }
