@@ -7,4 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',  // Pastikan output directory sesuai dengan yang diharapkan oleh Netlify
   },
+  publicDir: 'public', // Pastikan Vite tahu di mana mencari file publik
 });
