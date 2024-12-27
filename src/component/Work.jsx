@@ -1,29 +1,21 @@
 import { useMediaQuery } from "@uidotdev/usehooks";
 import Sipta from "../assets/Sipta.svg";
-import Akira from "../assets/Akira.svg";
-import Restaurant from "../assets/Restaurant.svg";
+import Hydrocare from "../assets/hydrocare.svg";
 
 const data = [
+  {
+    link: "https://github.com/rizkisepriadi/HydroCare",
+    picture: Hydrocare,
+    title: "Hydrocare",
+    desc: "Achieved 2nd place in Srifoton 2024 with a project focused on raising awareness about water conservation through interactive content and activities. As Team Leader and Full-Stack Developer, I designed and developed the system while collaborating with a UI/UX teammate.",
+    tag: "MongoDB, ExpressJS, React, NodeJS, TailwindCSS",
+  },
   {
     link: "https://github.com/rizkisepriadi/SIPTA",
     picture: Sipta,
     title: "Sistem Pendaftaran Tugas Akhir - Sipta",
     desc: "Sistem Pendaftaran Tugas Akhir is a system used to register student final projects. This system facilitates students in registering their final projects, as well as helping advisors in checking and approving student final project registrations.",
     tag: "Laravel, TailwindCSS, React, InertiaJS, MySQL",
-  },
-  {
-    link: "https://steakgacor.netlify.app/",
-    picture: Restaurant,
-    title: "Steak-Gacor Restaurant",
-    desc: "This restaurant website is the final project for the Web Programming class. The website was created using HTML, CSS, and Javascript. It features a food ordering system and displays the menus available at Steak-Gacor restaurant.",
-    tag: "HTML, Javascript, CSS",
-  },
-  {
-    link: "https://tori-porto.netlify.app",
-    picture: Akira,
-    title: "Akira Toriyama Tribute",
-    desc: "I created this website to honor one of the best manga artists in the world, Akira Toriyama. The website was built using HTML, CSS, and Javascript. It showcases some information about Akira Toriyama and some of his works.",
-    tag: "HTML, Javascript, CSS",
   },
 ];
 
