@@ -9,7 +9,7 @@ import inertia from "../assets/icon-inertia.svg";
 import tailwindcss from "../assets/icon-tailwindcss.svg";
 import figma from "../assets/icon-figma.svg";
 import sql from "../assets/icon-sql.svg";
-import git from "../assets/icon-git.svg";
+import kotlin from "../assets/icon-kotlin.svg";
 
 export default function Skill() {
   const isLargeScreen = useMediaQuery("(max-width: 768px)");
@@ -95,8 +95,8 @@ export default function Skill() {
             <p className="text-center mt-2">MySQL</p>
           </div>
           <div className="flex flex-col items-center">
-            <img className="h-16 w-16" src={git} alt="Git" />
-            <p className="text-center mt-2">Git</p>
+            <img className="h-16 w-16" src={kotlin} alt="Git" />
+            <p className="text-center mt-2">Kotlin</p>
           </div>
         </div>
       </div>
